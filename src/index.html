@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./output.css" rel="stylesheet" />
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@600&family=VT323&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Basketball Scoreboard</title>
+	</head>
+	<body class="bg-off-white flex flex-col h-dvh justify-center items-center">
+		<div
+			class="bg-navy min-h-[24rem] min-w-[36rem] max-w-[36rem] flex justify-around rounded-md"
+		>
+			<div class="flex flex-col justify-evenly w-[20%]">
+				<h3 class="text-off-white font-sans text-4xl" id="home-title">HOME</h3>
+				<div class="bg-black flex justify-center py-3">
+					<span class="font-sans text-coral text-6xl" id="home-score">0</span>
+				</div>
+				<div class="flex justify-between">
+					<button
+						class="border-[3px] border-lavender rounded-md font-sans text-lavender p-1"
+						id="home-plus-one"
+					>
+						+1
+					</button>
+					<button
+						class="border-[3px] border-lavender rounded-md font-sans text-lavender p-1"
+						id="home-plus-two"
+					>
+						+2
+					</button>
+					<button
+						class="border-[3px] border-lavender rounded-md font-sans text-lavender p-1"
+						id="home-plus-three"
+					>
+						+3
+					</button>
+				</div>
+			</div>
+			<div class="flex flex-col justify-evenly">
+				<h3 class="text-off-white font-sans text-4xl w-[20%]" id="guest-title">
+					GUEST
+				</h3>
+				<div class="bg-black flex justify-center py-3">
+					<span class="font-sans text-coral text-6xl" id="guest-score">0</span>
+				</div>
+				<div class="flex justify-between">
+					<button
+						class="border-[3px] border-lavender rounded-md font-sans text-lavender p-1"
+						id="guest-plus-one"
+					>
+						+1
+					</button>
+					<button
+						class="border-[3px] border-lavender rounded-md font-sans text-lavender p-1"
+						id="guest-plus-two"
+					>
+						+2
+					</button>
+					<button
+						class="border-[3px] border-lavender rounded-md font-sans text-lavender p-1"
+						id="guest-plus-three"
+					>
+						+3
+					</button>
+				</div>
+			</div>
+		</div>
+		<div>
+			<button
+				class="border-[3px] border-coral rounded-md font-sans text-coral flex justify-center text-3xl p-4 mt-4"
+				onclick="newGame()"
+			>
+				NEW GAME
+			</button>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>
